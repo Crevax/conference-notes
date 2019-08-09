@@ -1,0 +1,47 @@
+We Got the Func—Python Functional Programming
+Brian Costlow
+
+Functional Programming Basics
+  - Functions are first-class objects
+  - Functions don't have side effects (only returns an object)
+   -Everything is a funtion
+  - Immutable data structures
+  - No Statements
+  - Recursion over Loops
+  - Lazy Evaluation
+  - Closures
+  - Anonymous Functions
+
+Python has the required objects to be function
+  - Lists
+  - Closures
+  - Lazy Evaluations (yield)
+  - Anon Functions
+    - Lambda (different than Haskell, etc)
+
+Pitfalls
+  - Everything is an object in Python
+  - Meta-programming can introduce side effects
+    - 'Pure' fuctions may not be pure
+      - i.e. the __add__ function for lists reverses the object as well
+  - Common data strucutres are mutable (lists, dictionaries)
+  - Recursion depth is limited
+    - Artificially set at 1,000 levels
+    - Adjusting depth can cause a seg fault
+
+Building Blocks
+  - List Comprehensions
+    - Allows a statement to be written in brackets (iterators on iterators)
+  - Generator Expressions
+    - Instead of getting a list back, a generator is returned
+      - Lazyily evaluated
+    - Generator is "one and done"
+      - Functions like list and next consume the value(s)
+
+Partials
+  - Wrap functions/methods/objects with a pre-set value (?)
+
+Misc
+  functools in 3.x has partial methods and objects
+  Check out toolz package on PyPI
+  Talk wasn't useful for getting an understanding of Functional Programming, it was an overview of Python's capabilities for doing Functional Programming.

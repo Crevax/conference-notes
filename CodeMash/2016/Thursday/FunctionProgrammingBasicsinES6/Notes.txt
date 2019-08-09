@@ -1,0 +1,9 @@
+Functional Programming Basics in ES6
+Jeremy Fairbank
+github.com/jfairbank/fp-basics-in-es6
+
+Could not follow along, sorry
+
+Links
+  - drboolean.gitbooks.io
+  - bit.ly/LOR20R7

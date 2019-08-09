@@ -1,0 +1,73 @@
+ASP.NET Quick Wins: 20 Tips and Tricks for Better Performance
+Kevin Griffin
+(Link to slides coming later)
+
+Defining Performance
+  - How long until the user is pissed off
+  - Sweating because specs are high, but load times are slow
+
+Why Performance?
+  - 3 Numbers
+    - 100ms, the amount of time an action needs to take for a user to feel like they are commanding the software
+    - 1 second, the amount of time an action can take for a user to feel like they are using the software
+      - Not terrible, but not great
+    - 10 seconds, how long until the user's context switches
+      - Aweful
+  - Google ranks slow sites lower
+  - Mobile usage continues to grow
+
+Two Simple Rules for Perforamnce
+  - Fewer payloads
+  - Faster payloads
+
+The Wins
+  1. Disable debug mode before deployment
+  2. Enable HTTP compression (IIS)
+    - Dynamic (not installed or not defaulted)
+    - Static (normally default)
+  3. Enable IIS auto-start
+    - Prevents the application pool from shutting down, no upfront loading beyond very first user
+  4. Disable ViewState
+    - Entire app in web config
+    - All apps in machine config
+    - Page/Control EnableViewState="false"
+  5. Stop using Web Forms
+  6. Disable SessionState
+    - Not bad, but abused
+    - Difficult to configure properly for load balancing
+  7. Throw hardware at it
+  8. Minify/Compress JS and CSS
+  9. Output Cache
+    - And lookup tables
+  10. Stop shipping the kitchen sink
+    - Don't load unused scripts
+  11. Use Async
+    - Speeds up parallel processes
+    - Useful if your page needs to talk to several data sources
+  12. CDNs and subdomains
+    - Modern browsers limit downloads from a single domain
+  13. Use Glimpse
+    - http://getglimpse.com
+    - Server tool for measuring the performance of a request
+      - Times for actions to run
+      - SQL execution times
+  14. Upgrade your user experience
+    - Nothing wrong with a progress bar
+  15. ORM Considerations
+    - Test code-generated "read" vs Stored Procedures
+    - SQL Server, Optimize queries for Ad Hoc
+  16. Dispose SQL connections approprialty
+  17. Hire a DBA
+    - Optimize Database Indexes and Stored Procedures
+    - Create Indexes for the following clauses
+      - WHERE
+      - JOIN
+      - ORDER BY
+      - GROUP
+      - TOP
+    - Don't use SELECT *
+  18. Consider alternative data stores
+    - Redis, Mongo, etc
+  19. Embrace workflows
+    - Try not to do everyone at once
+  20. ??? Hire him? Maybe it'll be on the slides

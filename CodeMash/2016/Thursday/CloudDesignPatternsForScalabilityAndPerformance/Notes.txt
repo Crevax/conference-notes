@@ -1,0 +1,64 @@
+Cloud Design Patterns for Scalability and Performance
+Matt Johnson
+Video: http://aka.ms/ch9-cloud-scale
+
+Four components of Scalability
+  - Decomposition
+  - Partitioning
+  - Density
+  - Monitoring
+
+Decomposition
+  - Queueing is essential to scalability
+    - Operate on a request in a controlled manner
+    - Might have to reconfigure the AI
+  - Break apart the application into multiple components that can work in isolation/simultaneously
+    - Don't do everything in the same process
+  - "Life and shift"
+
+  Logical Decomposition
+    - Group workloads of similar requirements
+    - Usage perecentage?, availability, lifecycle, security
+
+  Physical Decomposition
+    - Fine tune resources
+
+Partitioning
+  - Veritical
+  - Horizontal (sharding)
+    - Single Tenancy
+    - Multi Tenancy
+
+Density
+  - Async
+    - Prefer async for IO operations
+      - Network, file systems, storage, sql, HTTP, etc
+    - Expose async API & syn APIs separately
+      - Don't wrap one to obtain the other
+    - No thread blocking
+    - Doesn't necessarily mean faster
+    - http://aka.me/ch9-async-tips
+  - Chattiness / Batch Operations
+    - SQL Bulk Copy
+    - Table valued parameters / MERGE
+    - TableBatchOperation
+
+Performance Monitoring
+  - Indicators
+    - Latency, ...?
+  - Look at more than just averages
+  - Use APM tools
+  - Examine low-level data in log files and other telemetry
+  - Identify the code path(s) that cause the issues
+    - Understand distribution of requests
+  - Correct issues, test and redeploy
+    - App profiler to prove/disprove
+    - One issue at a time
+  - http://aka.ms/mspnp-monitoring
+
+Misc Notes
+  - Cannot just taking an application and thow it into the cloud
+  - Veritical Scaling
+    - Increase system specs
+  - Horizontal Scaling
+    - Breaking apart instances (i.e. adding another database)

@@ -1,0 +1,56 @@
+RIOT – A React-like user interface micro-library
+Mike Ward
+http://mike-ward.net/talk-riotjs
+https://github.com/mike-ward/talk-riotjs
+
+It has a mix of custom html and inline script tags
+
+Why Riot?
+  - Custom tags to glue relevant HTML and JS together to form reusabke components
+    - Human readable (everything is together and in a familiar syntax)
+  - Uses a Virtual DOM
+  - Emphasizes on way data flow
+  - Pre-compiling and caching of expresssions
+  - Life-cycle events
+  - Server side rendering
+  - Not required to use propriety event system
+  - Able to manipulate DOM with other tools
+  - No extra THML or data attributes
+  - Tags can be creapted with ES6, typescripet
+  - NPM, Bower, etc integration
+  - Fewer API methods
+
+Bootstrapping:
+  // Riot Script
+  <script src="name" type="riot/tag"></script>
+  <script>riot.mount("name")</script>
+
+Writing
+  - riot.[name](//html, functions, etc);
+  - Custom scripts need to be transcompiled to pure JS
+  - Quick compile time
+
+VS React
+  - JS in HTML instead of vice versa
+
+Tag Syntax
+  - Combination of HTML and/or JS
+  - Lower case attribute names (opts.name)
+  - Shorthand for class names
+  - Styles can be placed in component
+    - Compiler will move it into <head>
+    - Works with SASS/LESS
+  - Works with Preprocessors
+    - type="coffee/typescript/etc"
+
+Misc
+  - Has an observer
+  - Life cycle events
+    .on('event', function(){});
+  - Can pass options into a tag when mounting
+  - Pure JS expressions available to use in HTML with handlebars syntax
+  - All tags are transcludable
+    - Multiple transclusions are allowed
+  - Uses an each attribute to iterate over a collection
+    - Collections do not need to be an object
+  - Has a simple router included

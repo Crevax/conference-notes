@@ -1,0 +1,62 @@
+Fabricating Websites
+AKA The Power of Modular UI Design Systems
+Luke Askew
+
+Parallels to a recent technique used in the construction industry
+
+Steps (Construction -> Web Design)
+  Architecture -> Strategy
+  Foundation (site prep) -> Design
+  Strucuture -> Code
+  Interior -> Test
+  Finishing Touchs -> Deploy
+
+Build Parts, not pages
+  - Focus on the individual pieces the come together as a whole
+
+Living Style Guides
+
+The inididual components might not start out looking pretty
+Other styles can be wrapped around later to unify everything
+
+How To Get There
+  4 Stages of Competence
+     1. Unconscious Incompetence
+     2. Conscious Incompetence
+     3. Conscious Competence
+     4. Unconscious Competence
+
+  Work Together
+    - Root process in collaboration
+
+  Mantras
+    - Collaboration over division
+    - Evolution over perfection
+    - Small decisions over large decisions
+
+  Think Small
+    - Design in modules/components, not pages
+
+  Move Quickly, Reduce Waste
+    - Deliverables from day 0
+    - Minimize work that doesn't make it into production
+
+  Divide and Conquer
+    - More flexibility with staffing
+
+  Be Immediatly Useful
+    - Remove barriers to usefulness
+      - Lack of documentation
+      - Large ramp-up time to develop (set up locale web server, database, etc)
+
+Fabricator - Tool Built by Speaker (http://fbrctr.github.io)
+  Style guide generator
+  Documentation generating
+  Rapid prototyping
+  Build bundling
+
+  Requirements
+    - NodeJS
+
+Misc Notes
+  Look up Atomic Design

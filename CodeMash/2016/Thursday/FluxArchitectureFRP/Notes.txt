@@ -1,0 +1,52 @@
+Flux Architecture: The FRP way
+Matthew LaForest
+
+What is Flux?
+  - Application architecture pattern
+  - Not MVC
+  - Unidirectional data flow
+  - Avoid complex interdependent models
+  - Generates actions the represent wanted changes
+  - Surprisingly object oriented
+
+What is an action?
+  - A wanted change to state
+  - It sends the information to a Dispatcher
+  - Information is updated in the Store
+  - The Views read data from the Store
+  - Views initiate an action
+
+Various Implementations
+  - Marty.js
+  - Fluxxor
+  - Flummin
+  - Reflux
+  - Flux library
+  - Redux
+
+Key Changes in Redux
+  - Single store for entire application
+  - Action creatos only emit objects
+  - Transforms to state are pure
+    - No side effects
+
+Reactive Architecture Implementation
+  - Actions
+    - Use plain objects
+  - Dispatcher
+    - Passes off an action
+  - Store
+    - Keeps current state within the system
+  - View
+    - Displays information from state
+
+Redux does not implement asychronous data flow.
+
+Flux makes it easier to think about how data changes
+
+Reactive programming opens up a new collection of tools to make dealing with data changes easier
+
+Redux is nice for people who aren't ready to dive deep into the self-implementation
+
+Misc
+  - ES7 decorators look neat, but I can't fully wrap my head around the provided examples of withStore() and withActions()

@@ -1,0 +1,35 @@
+OMG! This Codebase Sucks! Paying Down Techincal Debt While Continuing to Deliver Value
+Jim Holmes
+speakerdeck.com/jimhomles
+
+Critical question
+  - Will fixing the code bring value to the business?
+    - Team led decision
+      - Devs, testers, PMs, anyone with a stake in the application
+
+Nobody like to write bad code
+
+Don't start with the code
+  - Business sense comes first
+    - Drives the goals
+      - Reduce risk (can we get sued?)
+      - Prevent loss of revenue or customers
+
+Get the big picture
+  - Talk to support
+  - Examine release cycles
+  - Gauge customer mood
+
+Evaluation
+  - Extent of fix
+    - Patch, repair, orbital nuke (only way to be sure)
+  - Current state of system
+    - Open/closed bugs
+    - Complexity of code
+    - Size
+    - Churn rate
+    - Static analysis can help here
+    - Looking for overlap of business goals and errors
+
+Identify how codebase wound up as it was
+  - Cultural issue?

@@ -1,0 +1,57 @@
+Concentrate on Coding: Automating Everything Else
+Timothy Corey
+#DeploySmarter
+https://gallery.mailchimp.com/3924e7259a7bc0cd78c15f517/files/Deploy_Smarter.pdf
+https://gallery.mailchimp.com/3924e7259a7bc0cd78c15f517/files/Configuring_Jenkins_Plugins.pdf
+
+Overview
+  - Practical uses of automation
+  - Using free tools
+  - Not a comparison of deployment solutions
+  - Not a product advertisement
+  - Not a tutorial on writing code
+
+Big Idea
+  A developer who manually builds and deploys code is like a NASCAR driver who insists on changing their own tires
+
+Introducing Jenkins
+  - An open source automation system that can handle building, testing, and deploying software
+
+Automation #1
+  Automate your builds based upon a specified event such as a check-in to source control
+
+Automation #2
+  Rehydrate build files using package managers
+
+Automation #3
+  Automatically deploy built software to development, staging, and production servers
+
+Automation #4
+  Transform the build software based upon the needs of the deployment server
+
+#5
+  Run tests automatically and break the build on test failure
+
+#6
+  Create deployment notes that pull from commit messages and are formaatted in a readable manner
+
+#7
+  Email interested parties based upon the success or failure of a build
+
+#8
+  Alert customers and others via social media when an update happens
+  - If This Then That (IFTTT) plugin
+
+#9
+  Call or text interested parties on build success or failure
+  - Twilio plugin
+
+Bonus automations
+  - Update the software version with a build number
+  - Mark the calendar with the build version
+  - Change the color of the lights
+  - Update help tickets
+  - Spin up test servers
+
+Misc
+  DEPLOY to 44222 to receive slides

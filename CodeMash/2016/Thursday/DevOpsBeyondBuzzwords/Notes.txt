@@ -1,0 +1,72 @@
+DevOps Beyond the Buzzwords: What it Means to Embrace the DevOps Lifestyle
+Mark Heckler
+
+General disconnect of Development and Operation goals
+  - Development want to drive change, Operations wants to maintain stability
+
+Goal of DevOps
+  - Bring Dev and Ops together
+    - Shared Objectives
+    - Shared Pain
+    - Shared Rewards
+
+Why Dev Ops?
+  - Speed
+    - More capabilites to customer faster
+  - Agility
+    - Make adjustments when they are needed
+    - Adapt to environment changes
+  - Accuracy/Quality
+    - Tighter feedback loop
+    - Outcome measurement
+
+How?
+  - Culture
+    - Focus on people
+    - Embrace change and experimentation
+  - Automation
+    - Continuous delivery
+    - Infrasructure as code
+  - Lean
+    - Focus on end-user value
+    - Small batch sizes
+  - Measurement
+    - Measure everything
+    - Show improvement
+  - Sharing
+    - Open information
+    - Collaboration and communication
+
+How? Extended
+  - Culture
+    - Relies on trust
+      - Experimentation should be encouraged
+  - Automation
+    - Automated builds
+      - Unit tests
+      - Integration tests
+    - Continues Delivery
+      - Load testing
+      - Deployment automation
+    - Infrastructure as code
+      - Vagrant/Puppet/Chef/Ansible/Docker/etc
+    - Tool support
+  - Lean
+    - Incremental develop
+    - Small, frequent releases
+  - Measurement
+    - Continual monitoring to rapidly identify issues
+    - Compressed development/test/release cycle
+    - Change lead time
+    - Change failure rate
+    - Volume of defects
+    - Time/cost per release
+    - Mean time to recover
+    - Number & frequency of outages/performance issues
+      - Revenue impact
+  - Sharing
+    - Permeates everything else
+    - Without open collaboration and communication, everything else fails
+
+Misc
+  - Look into Code Foundry

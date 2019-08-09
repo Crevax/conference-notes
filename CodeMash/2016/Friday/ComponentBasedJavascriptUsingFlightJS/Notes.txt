@@ -1,0 +1,42 @@
+Component-Based Javascript using Flight.js
+Joel Byler
+
+What is Flight.js
+  - Event-driven web framework from Twitter
+
+Component
+  - JS object that references a DOM node
+  - Can manipulate the DOM within its node
+  - Listen to or trigger an event on the node
+  - Completely decoupled from each other
+
+Attribute
+  - Use by components and mixins
+  - Can be overridden
+
+Initializer
+  - Attaches component to DOM node
+    - Set up listeners
+
+Behavior
+  - Functions within the component
+
+Initialing a component
+  - jQuery style selector
+  - Each matching DOM element will have an instance of the component
+
+Mixins
+  - All reuse of component pieces
+  - Can be composed of other mixins
+
+Advice
+  - A predefined mixin
+    - Defines before, after, and around functions
+
+Testings
+  - Can use Jasmine
+    - Has its own extension
+  - Mocha extension
+
+Misc notes
+  - Can handle event bubbling
